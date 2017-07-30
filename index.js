@@ -1,10 +1,8 @@
 "use strict";
 
 const Program = require('./lib/program');
-const prog = new Program();
-
 
 /**
- * @type {Program}
+ * @type {Function}
  */
-module.exports = prog;
+module.exports = function(baseName) { return new Program(baseName); }
